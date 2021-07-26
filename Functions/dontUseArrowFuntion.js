@@ -9,8 +9,8 @@ const nico = {
     }
 };
 
-//기본문법의 함수는 this가 잘 작동한다.
-//오브젝트 안에 함수를 정의할때는 앞에 function을 붙이지 않는다.
+// 기본문법의 함수는 this가 잘 작동한다.
+// 오브젝트 안에 함수를 정의할때는 앞에 function을 붙이지 않는다.
 // const nico = {
 //     name: "Nico",
 //     age: 27,
@@ -25,10 +25,6 @@ nico.addYear();
 nico.addYear();
 nico.addYear();
 console.log(nico.age);
-
-
-
-
 //애로우함수를 사용할땐 본문에 this를 사용하면 안된다.
 button.addEventListener("click", () => {
     this.style.backgroundColor = "red";

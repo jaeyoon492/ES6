@@ -9,7 +9,7 @@ const addWelcome = () => {
 };
 
 //백틱을 통해 복잡한 코드를 한번에 줄일 수 있다.
-const minusWelcome = () => {
+const newWelcome = () => {
     const hello = "hello";
     const div = `
         <div class ="hello">
@@ -19,4 +19,4 @@ const minusWelcome = () => {
     wrapper.innerHTML = div;
 };
 
-setTimeout(minusWelcome, 5000);
+setTimeout(newWelcome, 5000);
