@@ -1,3 +1,4 @@
+// 스타일드 컴포넌트
 const styled = aElement => {
     const el = document.createElement(aElement);
     return args => {
@@ -8,6 +9,7 @@ const styled = aElement => {
     };
 };
 
-const title = styled("h1")(`border-radius: 10px; color: blue;`);
+const title = styled("h1")
+`border-radius: 10px; color: blue;`
 
 console.log(title);
