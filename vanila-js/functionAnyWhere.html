@@ -1,0 +1,23 @@
+<html>
+
+<body>
+    <script>
+        let age = prompt("나이를 알려주세요", 19);
+
+        let welcome;
+
+        if (age > 18) { //조건이 참이므로 welcome에는 참이슬 후레시 함수가 들어감
+            welcome = function () {
+                alert("참이슬 후레시");
+            };
+        } else {
+            welcome = function () {
+                alert("참이슬 후드러 맞기");
+            };
+        }
+
+        welcome(); //조건이 참이므로 welcome에는 참이슬 후레시 함수가 들어감
+    </script>
+</body>
+
+</html>

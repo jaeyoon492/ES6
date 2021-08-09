@@ -1,0 +1,21 @@
+<html>
+
+<body>
+    <script>
+        //0 과 널을 구분 하기 위해서는 조건을 자 짜주어야 한다 이에 대해 고민 하지않으면 
+        //0 이상의 숫자를 입력받는 프로그램에서 null이 들어갔을때 통과가 되는 불상사가 생길수 있다.
+        readNumber = () => {
+            let num = 0;
+            do {
+                num = prompt("숫자를 입력하십시오");
+            } while (!isFinite(num));
+
+            if (num === "" || num === null) return null;
+
+            return +num;
+        }
+        alert(`read ${readNumber()}`);
+    </script>
+</body>
+
+</html>

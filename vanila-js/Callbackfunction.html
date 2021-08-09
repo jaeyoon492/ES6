@@ -1,0 +1,27 @@
+<html>
+
+<body>
+    <script>
+        function ask(question, yes, no) {
+            console.log(yes);
+            console.log(no);
+            if (confirm(question)) {
+                yes(); //함수코드가 yes매개변수에 복사됨
+            } else {
+                no(); //함수코드가 no매개변수에 복사됨
+            }
+        }
+
+        function showOk() {
+            alert("동의 하셨습니다.");
+        }
+
+        function showCancel() {
+            alert("취소되었습니다.");
+        }
+
+        ask("동의 하시나요?", showOk, showCancel);
+    </script>
+</body>
+
+</html>
