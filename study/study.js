@@ -1,12 +1,3 @@
-let str = "happy winner winner chicken dinner";
-
-let target = 'in';
-
-let pos = 0;
-while (true) {
-    let foundPos = str.indexOf(target, pos);
-    if (foundPos == -1) break;
-
-    alert(`위치: ${foundPos}`);
-    pos = foundPos + 1;
-}
+const h2 = document.querySelector("#h2");
+const h3 =document.querySelector(".h3");
+const h4 = document.querySelector("h4");

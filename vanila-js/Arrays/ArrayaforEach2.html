@@ -1,0 +1,16 @@
+<html>
+
+<body>
+    <script>
+        const numbers = [1, 2, 3];
+        const pows = [];
+
+        numbers.forEach((item, index, arr) => {
+            arr[index] = item ** 2;
+        });
+        //콜백함수의 세번째 매개변수 arr 은 number이므로 arr을 직접 변경하면 numbers가 변경된다.
+        console.log(pows); //[1,4,9]
+    </script>
+</body>
+
+</html>

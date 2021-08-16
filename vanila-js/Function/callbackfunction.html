@@ -1,0 +1,26 @@
+<html>
+
+<body>
+    <script>
+        function repeat(n, func) {
+            for (let i = 0; i < n; i++) {
+                func(i);
+            }
+        }
+
+        let logAll = function (i) {
+            console.log(i);
+        };
+
+        let logOdds = function (i) {
+            if (i % 2) { //나머지가 0이 아니면 출력.
+                console.log(i);
+            }
+        };
+
+        repeat(5, logAll); //0,1,2,3,4
+        repeat(5, logOdds); //
+    </script>
+</body>
+
+</html>

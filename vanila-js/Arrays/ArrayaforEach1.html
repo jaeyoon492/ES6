@@ -1,0 +1,16 @@
+<html>
+
+<body>
+    <script>
+        const numbers = [1, 2, 3];
+        const pows = [];
+
+        numbers.forEach((item, index, arr) => {
+            console.log(`요소값: ${item}, 인덱스${index}, this: ${JSON.stringify(arr)}`)
+        });
+        //JSON.stringify()는 객체를 JSON포맷의 문자열로 변환한다.
+        console.log(pows); //[1,4,9]
+    </script>
+</body>
+
+</html>

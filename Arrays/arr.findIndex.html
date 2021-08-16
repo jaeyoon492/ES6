@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const friends = [
+            "nico@gmail.com",
+            "lynn@naver.com",
+            "dal@yahoo.com",
+            "mark@hoymail.com",
+            "flynn@gorea.com"
+        ];
+
+        //findIndex() : 내부함수의 조건이 맞는 요소의 위치를 반환해줌
+        const check = () => friends.findIndex(item => item.includes('gorea'));
+
+        let target = check();
+
+        if (target !== -1) {
+            console.log(target);
+
+            const username = friends[target].split("@")[0];
+
+            const email = 'korea.com';
+
+            friends[target] = `${username}@${email}`;
+
+            target = check();
+        }
+
+        console.log(friends);
+    </script>
+</body>
+
+</html>
